@@ -1,0 +1,25 @@
+if __name__ == '__main__':
+    s = input()
+    aln,al,d,lo,up = 0,0,0,0,0
+    for item in s:
+        if item.isalnum():
+            aln += 1
+        if item.isalpha():
+            al += 1
+        if item.isnumeric():
+            d +=1
+        if item.islower():
+            lo += 1
+        if item.isupper():
+            up += 1
+
+    if(aln!=0): print("True")
+    else: print("False")
+    if(al!=0): print("True")
+    else: print("False")
+    if(d!=0): print("True")
+    else: print("False")
+    if(lo!=0): print("True")
+    else: print("False")
+    if(up!=0): print("True")
+    else: print("False")
